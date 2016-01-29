@@ -1,0 +1,27 @@
+<body>
+
+	<div class="container">
+		<header>
+			<div class="login-header">
+	  			{{> loginButtons}}
+	  		</div>
+  		</header>
+		{{#with currentUser}}
+
+			<div class="section">
+				{{> avatar user=this class="tz-avatar" shape="circle" size="medium" bgColor=profile.bgColor txtColor=profile.txtColor}}
+
+				<div class="tz-col-2">
+					<span class="small-text">{{_ "currently_in"}}</span> <br/>
+					{{> timezonePicker selected=profile.timezone}}
+				</div>
+			</div>
+
+			{{#each arrayify usersByTimezone}}
+				{{> timezoneUsers}}
+			{{/each}}
+
+		{{/with}}
+
+  	</div>
+</body>

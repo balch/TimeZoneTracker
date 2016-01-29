@@ -1,0 +1,24 @@
+<template name="timezoneUsers">
+	<div class="tz-section">
+		<div>
+			<span class="tz-name">{{key}}</span>
+			<span class="tz-time">{{nowTime(key)}}</span>
+			<div style="clear:both"></div>
+		</div>
+
+		{{#each value}}
+			<div class="tz-user-row">
+				{{> avatar user=this class="tz-avatar" shape="circle" size="medium" bgColor=profile.bgColor txtColor=profile.txtColor}}
+
+				<div class="tz-col-2">
+					{{#if username}}
+						{{username}}
+					{{else}}
+						{{profile.name}}
+					{{/if}}
+				</div>
+			</div>
+		{{/each}}
+	</div>
+</template>
+

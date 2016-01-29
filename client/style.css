@@ -1,0 +1,98 @@
+body {
+  font-family: sans-serif;
+  background-color: #315481;
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+}
+
+header {
+  background: #d2edf4;
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+header .login-header {
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+#login-buttons {
+  display: block;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: #eeeeee;
+}
+
+.section {
+  display: block;	
+  width: 400px;
+  margin: 0 auto;
+}
+
+.tz-section {
+  border-radius: 10px;	
+  display: block;	
+  width: 440px;
+  margin: 10px auto;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.tz-user-row {
+  display: block;	
+  width: 400px;
+  margin: 10px auto;
+}
+
+.tz-avatar {
+  display: table-cell;
+}
+
+.tz-col-2{
+  display: table-cell;
+  padding-left: 20px;	
+  vertical-align: middle;
+  height: 50px;
+}
+
+.tz-name{
+  font-weight: bold;
+  font-size: 1.25em;
+  float: left;
+}
+
+.tz-time{
+  float: right;
+}
+
+.small-text {
+  font-size: .75em;
+}
+
